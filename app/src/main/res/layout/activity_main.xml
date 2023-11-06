@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:layout_gravity="center"
+        android:textSize="70px"
+        android:layout_marginTop="750px"
+        android:text="Sign Up" />
+
+    <EditText
+        android:id="@+id/emailFields"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px"
+        android:background="@drawable/border_shape"
+        android:clickable="false"
+        android:ems="10"
+        android:hint="   email"
+        android:inputType="textEmailAddress"
+        android:visibility="visible"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cardview_dark_background"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/nameFields"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px"
+        android:background="@drawable/border_shape"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cardview_dark_background"
+        android:hint="     name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/userPasswordFields"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px"
+        android:background="@drawable/border_shape"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cardview_dark_background"
+        android:ems="10"
+        android:hint="     passowrd"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Sign up"
+        android:background="@drawable/border_shape"
+        android:layout_gravity="center"
+        app:strokeColor="#DCDCDC" />
+
+</LinearLayout>
