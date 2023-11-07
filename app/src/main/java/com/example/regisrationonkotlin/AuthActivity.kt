@@ -33,8 +33,10 @@ class AuthActivity : AppCompatActivity() {
             }
             else{
                 val db = DbHelper(this, null)
-
                 if (db.getUser(userEmail,userPass)){
+                    email.text.clear()
+                    pass.text.clear()
+
                     val intent = Intent(this, HomeActivity::class.java)
                     startActivity(intent)
                 }
