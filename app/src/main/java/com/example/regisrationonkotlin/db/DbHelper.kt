@@ -4,6 +4,7 @@ import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import android.provider.ContactsContract.CommonDataKinds.Email
 import com.example.regisrationonkotlin.entity.User
 
 class DbHelper(val context :Context, val factory: SQLiteDatabase.CursorFactory? ) :
@@ -28,5 +29,12 @@ class DbHelper(val context :Context, val factory: SQLiteDatabase.CursorFactory? 
         db.insert("users", null, values)
 
         db.close()
+    }
+
+    fun getUser(email:String, password:String): Boolean{
+        val db = this.readableDatabase
+
+        val result = db.rawQuery("SELECT * FROM users WHERE email = '$email' AND password = '$password'", null)
+        return result.moveToFirst()
     }
 }

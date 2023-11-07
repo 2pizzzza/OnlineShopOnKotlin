@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FBFBFB"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".AuthActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,10 +15,10 @@
         android:layout_gravity="center"
         android:textSize="70px"
         android:layout_marginTop="750px"
-        android:text="Sign Up" />
+        android:text="Login" />
 
     <EditText
-        android:id="@+id/emailFields"
+        android:id="@+id/emailFieldsAuth"
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
@@ -33,51 +33,39 @@
         android:textColorHint="@color/cardview_dark_background"
         tools:visibility="visible" />
 
-    <EditText
-        android:id="@+id/nameFields"
-        android:layout_width="300dp"
-        android:layout_height="55dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20px"
-        android:background="@drawable/border_shape"
-        android:ems="10"
-        android:textColor="@color/black"
-        android:textColorHint="@color/cardview_dark_background"
-        android:hint="     name"
-        android:inputType="text" />
 
     <EditText
-        android:id="@+id/userPasswordFields"
+        android:id="@+id/userPasswordFieldsAuth"
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:layout_marginTop="20px"
         android:background="@drawable/border_shape"
-        android:textColor="@color/black"
-        android:textColorHint="@color/cardview_dark_background"
         android:ems="10"
         android:hint="     password"
-        android:inputType="textPassword" />
-
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cardview_dark_background" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/signInButton"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
-        android:text="Sign up"
+        android:text="Sign in"
         android:background="@drawable/border_shape"
         android:layout_gravity="center"
         app:strokeColor="#DCDCDC" />
 
     <TextView
-        android:id="@+id/linkToAuth"
+        android:id="@+id/linkToReg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="630px"
+        android:layout_marginTop="800px"
         android:fontFamily="@font/inter_bold"
-        android:text="Do you have an account? Sign In"
+        android:text="Don't have an account? SignUp"
         android:textSize="45px" />
+
 
 </LinearLayout>
