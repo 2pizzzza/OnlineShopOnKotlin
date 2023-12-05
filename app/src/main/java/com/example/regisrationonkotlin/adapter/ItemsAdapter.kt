@@ -50,6 +50,7 @@ class ItemsAdapter(var items:List<Items>, var context:Context) : RecyclerView.Ad
 
             intent.putExtra("itemTitle", items[position].title)
             intent.putExtra("itemText", items[position].text)
+            intent.putExtra("itemImage", items[position].image)
 
 
             context.startActivity(intent)
